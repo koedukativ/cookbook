@@ -2,11 +2,15 @@ $('#cb-share-recipe').hide(); //Share Button is hidden by default
 
 document.getElementById("cb-share-recipe").addEventListener("click", shareRecipe);
 
-$('#cb-recipe-btn1').click(function(){
-    $('#cb-recipe').load("recipes.html #cb-recipe1");
+$('.cb-recipe-btn').click(function(e){
+    $('#cb-recipe').load("recipes.html #cb-recipe" + extractNumber(e.currentTarget.id));
     $('#cb-share-recipe').show();  //When a recipe is selected, the Share Button appears
     }
 );
+
+function extractNumber(id) {
+    return id.split("-btn").pop();
+}
 
 // document.getElementById("cb-recipe1-button").addEventListener("click", loadRecipe);
 
@@ -19,4 +23,3 @@ function loadRecipe() {
     $('#cb-share-recipe').show();  //When a recipe is selected, the Share Button appears
 }
 */
- */
