@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Cookbook Josh & J</title>
   <meta name="author" content="Josh and J">
-  <meta name="description" content="a group excersise for WBS coding school">
+  <meta name="description" content="a group exercise for WBS coding school">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -34,28 +36,20 @@
   </ul>
 </nav>
  
-  <h1>Amazing Cookbook</h1>>
+  <h1>Amazing Cookbook</h1>
+  <button id="cb-recipe-btn1" class="cb-recipe-btn">Recipe 1</button>
+  <button id="cb-recipe-btn2" class="cb-recipe-btn">Recipe 2</button>
+  <button id="cb-recipe-btn3" class="cb-recipe-btn">Recipe 3</button>
+
   
-  <article class="cb-recipe">
-    <h3 class="cb-recipe-title">Sample Recipe</h3>
-    <img class="cb-recipe-image" src="assets/sample.jpg" alt="Grilled Chicken Bowl with Vegetables">
-    <p class="cb-recipe-description">This would be the part where we have an awesome, mouth-watering recipe!</p>
-    <table class="cb-ingredients">
-      <tr class="cb-ingredients-head">
-        <th>Ingredient</th>
-        <th>Amount</th>
-        <th>Comment</th>
-      </tr>
-      <tr class="cb-ingredients-list">
-        <td>Ingredient</td>
-        <td>Amount</td>
-        <td>Comment</td>
-      </tr>
-    </table>
-  </article>
+  <div id="cb-recipe">
+  </div>
+  <button id="cb-share-recipe">Share</button>
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 
