@@ -1,0 +1,165 @@
+
+body, html, *, #cbmenu {
+  margin: 0; padding: 0;
+}
+body {padding:0px 80px; font-family:sans-serif;}
+body {
+  background: #ff7;
+}
+
+#cbmenu-overlay {left:0px;}
+
+#cbmenu-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+}
+
+.cb-menu {
+	/*"../photos/others-3000px/pexels-karolina-grabowska-4593876.jpg"*/
+	background-image:url("../assets/bg-asian-pattern.jpg.png") !important;
+	background-size:cover;
+ background-repeat: no-repeat !important;
+  background-position:center bottom !important; 
+
+}
+
+.cb-menu ul {
+	max-height:100vh;
+	overflow-y:auto !important;
+	
+}
+.cb-menu ul li {
+	border-bottom:1px solid rgba(226,207,174,0.4);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+label {
+  cursor: pointer;
+}
+label:focus {
+  outline: none;
+}
+
+.cb-menu {
+  position: absolute;
+  top: 0;
+  left: -14px; /* stacking of menu levels */
+  background: #fff;
+  width: 310px;
+  
+  height: 100%;
+  transform: translate3d(-370px, 0, 0);
+  transition: transform 0.35s;
+	
+}
+
+
+.cb-first-level {transform: translate3d(-300px, 0, 0);}
+
+.cb-menu label.cb-menu-toggle {
+  position: absolute;
+  right:-60px;
+  width: 60px;
+  height: 60px;
+  line-height: 0px;
+  display: block;
+  padding: 0;
+  text-indent: -9999px;
+  background: #fff url("../assets/icon-menu.png") 50% 50%/25px 25px no-repeat;	
+}
+
+/* allows stacked menu levels with closing toggles always in same position */
+.cb-menu .cb-menu label.cb-menu-toggle {right:-74px;}
+.cb-menu .cb-menu .cb-menu label.cb-menu-toggle {right:-88px;}
+.cb-menu .cb-menu .cb-menu .cb-menu label.cb-menu-toggle {right:-104px;}
+.cb-menu .cb-menu .cb-menu .cb-menu .cb-menu label.cb-menu-toggle {right:-118px;}
+
+.cb-menu ul li > label {
+  background: url("../assets/icon-arrow-right.png") 95% 50%/16px 16px no-repeat;
+}
+.cb-menu ul li a, .cb-menu ul li label {
+  display: block;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #000;
+}
+.cb-menu ul li a:hover, .cb-menu ul li label:hover {
+  color: #666;
+}
+
+/* hide inputs */
+.cb-menu-checkbox {
+  display: none;
+}
+
+/* hide navigation icon for sublabels */
+.cb-menu .cb-menu label.cb-menu-toggle {
+  background: none;
+}
+
+/* invisible click catcher */
+/*.cb-menu .cb-menu label.cb-menu-toggle:after {
+  content:'';
+	width:120px;
+	height:60px;
+	position:absolute;
+	right:-60px;
+	top:0;
+    background:none;
+}*/
+
+
+
+/* fade in checked menu */
+.cb-menu-checkbox:checked + .cb-menu {
+  transform: translate3d(0px, 0, 0);
+
+	transition:0.4s;
+	
+}
+
+
+.cb-menu-checkbox:checked + .cb-menu label[for=cb-menu-main].cb-menu-toggle {
+	background: #fff url("../assets/icon-menu-close.png") 50% 50%/25px 25px no-repeat;
+}
+.cb-menu-checkbox:checked + .cb-menu {
+	box-shadow:5px 5px 13px rgba(0,0,0,0.3);
+}
+.cb-menu-checkbox:checked + .cb-first-level {
+	box-shadow:5px 5px 13px rgba(0,0,0,0.5);
+}
+.cb-menu-toggle[for=cb-menu-main] {box-shadow:4px 4px 3px rgba(0,0,0,0.3); border-bottom-right-radius:6px;}
+/*[for=cb-menu-main]*/
+
+
+
+
+
