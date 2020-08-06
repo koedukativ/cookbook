@@ -1,15 +1,5 @@
-// Hide all recipes from view
-/*for (var i = 1; i < 4; i++) {
+for (var i = 1; i < 4; i++) {
     document.getElementById("cb-recipe"+i).style.visibility = "hidden";
-}*/
-
-//Share Button
-// document.getElementById("cb-share-recipe").style.visibility = "hidden"; //Share Button is hidden by default
-
-document.getElementById("cb-share-recipe").addEventListener("click", shareURL);
-
-function shareURL() {
-    alert("Use this link to share the recipe: " + location);
 }
 
 // Create an Event Listener for every button
@@ -28,10 +18,4 @@ function displayRecipe() {
 //Takes the Button ID and Returns just the Number
 function extractNumber(id) {
     return id.split("-btn").pop();
-}
-console.log(document.getElementsByTagName("input")[0]);
-document.getElementsByName('input')[0].addEventListener('change', doThis);
-
-function doThis() {
-    console.log("hey");
 }
