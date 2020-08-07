@@ -4,6 +4,8 @@ xhr.open('GET', '/cookbook/navigation.html', true);
 xhr.onload = function() {
     if(this.status == 200){
         document.getElementById("cb-menu-overlay").innerHTML =this.responseText;
+    } else if(this.status == 404) {
+        document.getElementById("cb-menu-overlay").innerHTML = "Recipe not found";
     }
 }
 
