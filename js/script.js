@@ -1,3 +1,7 @@
+/*  ABOUT: Old implementation of Recipe Loading. All Recipes were in the index.html
+    and their visibility was changed via a button
+ */
+
 for (var i = 1; i < 4; i++) {
     document.getElementById("cb-recipe"+i).style.visibility = "hidden";
 }
