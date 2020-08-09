@@ -12,7 +12,7 @@ body {
   background-size: cover;
 }
 
-#cb-menu-overlay {left:0px;}
+#cb-menu-overlay {left:0px;z-index:300; pointer-events: none;}
 
 #cb-menu-overlay {
   position: fixed !important;
@@ -23,6 +23,7 @@ body {
 }
 
 .cb-menu {
+pointer-events:auto;
 	/*"../photos/others-3000px/pexels-karolina-grabowska-4593876.jpg"*/
 	background-image:url("../assets/bg-asian-pattern.jpg.png") !important;
 	background-size:cover;
