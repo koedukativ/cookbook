@@ -10,42 +10,14 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/menu-styles.css">
 
 </head>
 
 <body>
-  <nav class="cookbook-menu">
-    <ul>
-    <li>recipes
-      <ul>
-        <li> salad</li>
-        <li>main dishes</li>
-        <li>dessert</li>
-      </ul>
-    </li>
-    <li>shop</li>
-    <li>contact
-      <ul>
-        <li>about the project
-        </li>
-      </ul>
-    </li>
-    <ul>
-      <li>the authors</li>
-    </ul>
-  </ul>
-</nav>
- 
+  <div id="cb-menu-overlay"></div>
+
   <h1>Amazing Cookbook</h1>
-  <button id="cb-recipe-btn1" class="cb-recipe-btn">Recipe 1</button>
-  <button id="cb-recipe-btn2" class="cb-recipe-btn">Recipe 2</button>
-  <button id="cb-recipe-btn3" class="cb-recipe-btn">Recipe 3</button>
-
-
-  <div id="cb-recipe" src="recipes.html">
-  </div>
-
-  <button id="cb-share-recipe">Share</button>
 
   <article id="cb-recipe1">
     <h3 class="cb-recipe-title">Sample Recipe</h3>
@@ -55,57 +27,24 @@
       <tr class="cb-ingredients-head">
         <th>Ingredient</th>
         <th>Amount</th>
+        <th>Unit</th>
         <th>Comment</th>
       </tr>
       <tr class="cb-ingredients-list">
         <td>Ingredient</td>
         <td>Amount</td>
+        <td>Unit</td>
         <td>Comment</td>
       </tr>
     </table>
-  </article>
-
-  <article id="cb-recipe2">
-    <h3 class="cb-recipe-title">Sample Recipe</h3>
-    <img class="cb-recipe-image" src="assets/example.jpg" alt="Grilled Chicken Bowl with Vegetables">
-    <p class="cb-recipe-description">Something completly different</p>
-    <table class="cb-ingredients">
-      <tr class="cb-ingredients-head">
-        <th>Ingredient</th>
-        <th>Amount</th>
-        <th>Comment</th>
-      </tr>
-      <tr class="cb-ingredients-list">
-        <td>Ingredient</td>
-        <td>Amount</td>
-        <td>Comment</td>
-      </tr>
-    </table>
-  </article>
-
-  <article id="cb-recipe3">
-    <h3 class="cb-recipe-title">Sample Recipe</h3>
-    <img class="cb-recipe-image" src="assets/example.jpg" alt="Grilled Chicken Bowl with Vegetables">
-    <p class="cb-recipe-description">And again, different</p>
-    <table class="cb-ingredients">
-      <tr class="cb-ingredients-head">
-        <th>Ingredient</th>
-        <th>Amount</th>
-        <th>Comment</th>
-      </tr>
-      <tr class="cb-ingredients-list">
-        <td>Ingredient</td>
-        <td>Amount</td>
-        <td>Comment</td>
-      </tr>
-    </table>
+    <button id="cb-share-recipe">Share</button>
   </article>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <script src="js/load-navbar.js"></script>
 </body>
 
 </html>
