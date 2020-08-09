@@ -1,16 +1,22 @@
-
 body, html, *, #cbmenu {
   margin: 0; padding: 0;
 }
 body {padding:0px 80px; font-family:sans-serif;}
 body {
-  background: #ff7;
+  background: #000 url("../photos/others-3000px/tea-plantation-3358870.jpg") no-repeat center center fixed;
+	/*background: #000 url("../photos/others-3000px/asia-2938645.jpg") no-repeat center center fixed;*/
+	
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-#cbmenu-overlay {left:0px;}
+#cb-menu-overlay {left:0px;}
 
-#cbmenu-overlay {
-  position: fixed;
+#cb-menu-overlay {
+  position: fixed !important;
+  top:0px;
   width: 100vw;
   height: 100vh;
   overflow:hidden;
@@ -32,30 +38,6 @@ body {
 }
 .cb-menu ul li {
 	border-bottom:1px solid rgba(226,207,174,0.4);
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-
-::-webkit-scrollbar-track {
-  background: #666666;
-  border: 0px none #ffffff;
-  border-radius: 50px;
-}
-::-webkit-scrollbar-track:hover {
-  background: #666666;
-}
-::-webkit-scrollbar-track:active {
-  background: #333333;
-}
-::-webkit-scrollbar-corner {
-  background: transparent;
 }
 
 
