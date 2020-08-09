@@ -8,6 +8,7 @@
 	box-shadow:4px 4px 30px rgba(0,0,0,0.3);
 	color:#333;
 }
+#cb-recipe a {color:darkorange;}
 
 #cb-recipe h1, #cb-recipe h2 {
 	border-bottom: 1px solid #D77201;
@@ -19,7 +20,7 @@
 	
 }
 
-#cb-recipe h1 {font-size:50px;-webkit-text-stroke: 1px #333;	}
+#cb-recipe h1 {font-size:40px;-webkit-text-stroke: 1px #333;	}
 #cb-recipe h2 {font-size:30px; -webkit-text-stroke: 0.5px #666;	margin-top:25px; margin-bottom:10px;}
 
 #cb-recipe h3 {
@@ -94,7 +95,7 @@
 ol li {
   counter-increment: cb-list-counter;
   display: block;
-  width: 50%;
+  width: 90%;
 
 }
 ol li::before {
@@ -118,4 +119,45 @@ ol li::before {
 	#cb-recipe h3 {font-size:15px;}
 	.cb-ingredients, .cb-preparation-list  {font-size:12px;}
 	.cb-ingredients th, .cb-ingredients td {padding:5px;}
+}
+
+#cb-share-recipe {
+	display:flex; 
+	vertical-align: center;
+	border:1px solid orange;
+	padding:5px;
+	
+}
+.cb-share-icon {
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background:yellow;
+	background:url("../assets/icons8-share-512.png") no-repeat center center;
+	
+	background-size: 24px 24px;
+	padding-right:29px;
+	margin-right:5px;
+	border-right:1px solid #ccc;
+}
+
+
+@page {
+  size: A4;
+  margin-top: 2cm; margin-bottom: 2cm;
+margin-left: 0cm; margin-right:0cm;	
+}
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+  #cb-recipe {
+	  width:75%;
+	  margin:20mm 0;
+	  padding:10mm;
+	  
+	}
+	#cb-share-recipe	{display:none;}
+	.cb-ingredients-title {page-break-before: always};
 }

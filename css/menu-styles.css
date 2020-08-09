@@ -142,7 +142,8 @@ label:focus {
 .cb-menu-toggle[for=cb-menu-main] {box-shadow:4px 4px 3px rgba(0,0,0,0.3); border-bottom-right-radius:6px;}
 /*[for=cb-menu-main]*/
 
-
-
+@media print {
+	#cb-menu-overlay {display:none;}
+}
 
 
